@@ -1,0 +1,9 @@
+# For those who work in PyCharm
+venv/
+.idea/
+__pycache__/
+cogs/__pycache__/
+
+# Careless person protection
+config.py
+data.db
