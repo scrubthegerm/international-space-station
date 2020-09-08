@@ -19,3 +19,5 @@ info_channel = 0
 nasa_api_key = "Want one? Go here: https://api.nasa.gov/#apply-for-an-api-key"
 
 mapbox_api_key = "You need this for iss.now to work."
+
+owm_api_key = "You need this for iss.weather to work."

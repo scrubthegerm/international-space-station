@@ -10,7 +10,7 @@ from discord.ext import commands
 
 bot = commands.AutoShardedBot(command_prefix=config.prefix, description="International Space Station Bot", pm_help=None)
 
-extensions = ["cogs.station", "cogs.info", "cogs.space", "cogs.agencies", "cogs.earth"]
+extensions = ["cogs.station", "cogs.info", "cogs.space", "cogs.agencies", "cogs.earth", "cogs.dev"]
 
 db = sqlite3.connect('data.db')
 c = db.cursor()

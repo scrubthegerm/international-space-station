@@ -16,8 +16,8 @@ class Agencies(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command(name="sx.launch", aliases=['spacex.launch', 'sx.launches', 'spacex.launches'])
-    async def sxlaunch(self, ctx, *, arg: str = None):
+    @commands.command(name="spacex", aliases=['spacex.launch', 'sx.launches', 'spacex.launches', 'sxlaunch', 'sx.launch'])
+    async def spacex(self, ctx, *, arg: str = None):
         """Get basic information about SpaceX's most recent launch, or search past launches."""
         launch = None
         request = json.loads(session.get(f"https://api.spacexdata.com/v2/launches").text)
