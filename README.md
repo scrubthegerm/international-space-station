@@ -19,7 +19,7 @@ Currently, the bot's functionality is as follows:
 | iss.about     | none          | View some basic information about the bot.
 | iss.apod      | none          | View NASA's Astronomy Picture of the Day.
 | iss.marsweather|required: none, optional: date | View the weather on Mars as observed by the Curiosity rover.
-| iss.sx.launch|required: none, optional: flight number, date, mission name|View details about past SpaceX launches.
+| iss.spacex|required: none, optional: flight number, date, mission name|View details about past SpaceX launches.
 
 As well, the bot's playing status is updated every 30 seconds, showing the country (or lack thereof)
 that the ISS is currently over, as well as its current coordinates.
