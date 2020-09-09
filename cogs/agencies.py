@@ -18,7 +18,7 @@ class Agencies(commands.Cog):
 
     @commands.command(name="spacex", aliases=['spacex.launch', 'sx.launches', 'spacex.launches', 'sxlaunch', 'sx.launch'])
     async def spacex(self, ctx, *, arg: str = None):
-        """Get basic information about SpaceX's most recent launch, or search past launches."""
+        """Get basic information about SpaceX's launches."""
         launch = None
         request = json.loads(session.get(f"https://api.spacexdata.com/v2/launches").text)
         # If the arg is nothing, just get the most recent launch

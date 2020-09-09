@@ -22,7 +22,7 @@ class Earth(commands.Cog):
 
     @commands.command(aliases=['satimg'])
     async def coords(self, ctx, lat = 0.0, lon = 0.0, *, zoom: int = 3):
-        """Locate a certain place on earth."""
+        """Put in some coordinates to see them placed on a map."""
         print(lat)
         print(lon)
         embed = discord.Embed(title=f"If this is zoomed in too far or isn't zoomed in enough, try including a zoom "
