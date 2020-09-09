@@ -35,7 +35,7 @@ class Earth(commands.Cog):
 
     @commands.command(aliases=['satmar'])
     async def weather(self, ctx, *, arg):
-        """Locate a certain place on earth."""
+        """Get the weather for a certain place on earth."""
         request = json.loads(session.get(f"https://nominatim.openstreetmap.org/search?format=json&q=\"{arg}\"").text)
         req_lat = request[0]['lat']
         req_lon = request[0]['lon']
